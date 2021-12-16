@@ -6,7 +6,7 @@
 #include <atomic>
 //goldbolt
 
-#define  STEPS 100000000
+#define  STEPS 10000000
 #define CACHE_LINE 64u
 
 using namespace std;
@@ -144,6 +144,15 @@ double integrate(double a, double b, f_t f) {
 int main() {
 //    cout << integrate(-1,1,func) << endl;
 //    std::cout << integratePS(-1,1,func)<<std::endl;
+	std::cout << "integrate\n";
+	show_experiment_results(integrate);
+	std::cout << "integrate_cpp_mtx\n";
     show_experiment_results(integrate_cpp_mtx);
+	std::cout << "integrate_partial_sum\n";
+	show_experiment_results(integratePS);
+	std::cout << "integrate_partial_sum_omp\n";
+	show_experiment_results(integrate_partial_sum);
+	std::cout << "integrate_reduction\n";
+	show_experiment_results(integrate_reduction);
 //    experiment_result_t ExpP = run_experiment(integratePS);
 }
