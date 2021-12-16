@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/myfiles/MyClionProjects/paralProg1/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+vector
+-
+omp.h
+-
+atomic
+-
+

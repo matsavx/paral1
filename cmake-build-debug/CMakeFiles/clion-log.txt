@@ -1,0 +1,18 @@
+C:\Users\User\.CLion2019.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/myfiles/MyClionProjects/paralProg1
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++.exe
+-- Check for working CXX compiler: /usr/bin/c++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/myfiles/MyClionProjects/paralProg1/cmake-build-debug

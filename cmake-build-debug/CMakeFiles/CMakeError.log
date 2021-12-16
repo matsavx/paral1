@@ -1,0 +1,26 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /cygdrive/c/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/cygdrive/c/Strawberry/c/bin/gmake.exe cmTC_19fcf/fast && C:/Strawberry/c/bin/gmake -f CMakeFiles/cmTC_19fcf.dir/build.make CMakeFiles/cmTC_19fcf.dir/build
+gmake[1]: Entering directory 'C:/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake[1]: *** No rule to make target '/cygdrive/c/Users/User/.CLion2019.3/system/cygwin_cmake/share/cmake-3.15.3/Modules/CMakeCCompilerABI.c', needed by 'CMakeFiles/cmTC_19fcf.dir/CMakeCCompilerABI.c.o'.  Stop.
+gmake[1]: Leaving directory 'C:/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/CMakeTmp'
+makefile:121: recipe for target 'cmTC_19fcf/fast' failed
+gmake: *** [cmTC_19fcf/fast] Error 2
+
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /cygdrive/c/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/cygdrive/c/Strawberry/c/bin/gmake.exe cmTC_c7568/fast && C:/Strawberry/c/bin/gmake -f CMakeFiles/cmTC_c7568.dir/build.make CMakeFiles/cmTC_c7568.dir/build
+gmake[1]: Entering directory 'C:/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake[1]: *** No rule to make target '/cygdrive/c/Users/User/.CLion2019.3/system/cygwin_cmake/share/cmake-3.15.3/Modules/CMakeCXXCompilerABI.cpp', needed by 'CMakeFiles/cmTC_c7568.dir/CMakeCXXCompilerABI.cpp.o'.  Stop.
+gmake[1]: Leaving directory 'C:/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/CMakeTmp'
+makefile:121: recipe for target 'cmTC_c7568/fast' failed
+gmake: *** [cmTC_c7568/fast] Error 2
+
+
+
+

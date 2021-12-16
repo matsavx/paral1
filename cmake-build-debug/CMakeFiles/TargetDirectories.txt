@@ -1,0 +1,3 @@
+/cygdrive/c/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/myfiles/MyClionProjects/paralProg1/cmake-build-debug/CMakeFiles/untitled11.dir
