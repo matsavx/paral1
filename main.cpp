@@ -114,31 +114,37 @@ experiment_result_t run_experiment(I_t I) {
 }
 
 void show_experiment_results(I_t I) {
-    printf("%10s %10sms\n", "Result", "Time");
+    double T1;
+    printf("%10s %10sms %10ms\n", "Result", "Time", "Speed");
     for (unsigned T = 1; T <= omp_get_num_procs(); T++) {
         experiment_result_t R;
         omp_set_num_threads(T);
         R = run_experiment(I);
-        printf("%10g%10g\n", R.result, R.time_ms);
+        if (T==1)
+            T1 = R.time_ms;
+        printf("%10g\t%10g\t%10g\n", R.result, R.time_ms, T1/R.time_ms);
     }
 }
 
 double integrate(double a, double b, f_t f) {
-    atomic<double> Result {0.0};
+    atomic<double> R = {0.0};
     int num = omp_get_num_threads();
     vector<thread> threads;
     double dx = (b - a)/STEPS;
-    auto fun = [dx,&Result,a,b,f, num](auto t) {
+    auto fun = [dx,&R,a,b,f, num](auto t) {
+        double Result = 0;
         for(unsigned i = t; i < STEPS; i += num) {
             Result = Result + f(i*dx+a);
         }
+        Result = Result + R;
     };
+    threads.reserve(num);
     for (unsigned int t = 1; t < num; t++)
         threads.emplace_back(fun,t);
     fun(0);
     for (auto &thread:threads)
         thread.join();
-    return Result * dx;
+    return R * dx;
 }
 
 static unsigned num_treads = std::thread::hardware_concurrency();
